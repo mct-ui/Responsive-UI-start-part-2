@@ -774,123 +774,17 @@ a:active {
     The card component is used to display a card
 */
 
-.c-card {
-  border-radius: $radius-l;
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: $space-m;
-}
-
-.c-card__body {
-  padding: $space-m $space-m 0;
-  display: flow-root;
-
-  & + & {
-    border-top: 1px solid $color-border-light;
-  }
-}
-
 /*
     Components: Attachments
     ---
     The attachments component is used to display a list of attachments
 */
 
-.c-attachments {
-  border: 1px solid $color-border-light;
-  border-radius: $radius-m;
-}
-
-.c-attachments__item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $space-xs;
-  align-items: center;
-  justify-content: space-between;
-  padding: $space-xs $space-s;
-
-  & + & {
-    border-top: 1px solid $color-border-light;
-  }
-}
-
-.c-attachments__icon {
-  fill: $oc-gray-5;
-  rotate: 45deg;
-  flex-shrink: 0;
-}
-
-.c-attachments__file {
-  display: flex;
-  align-items: center;
-  gap: $space-xxs;
-}
-
-.c-attachments__file-name {
-  overflow-wrap: break-word;
-  word-break: break-all;
-}
-
 /*
     Components: Timeline
     ---
     The timeline component is used to display a list of timeline items
 */
-
-.c-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: $space-m;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 2px;
-    position: absolute;
-    top: 2px;
-    bottom: 2px;
-    left: calc($baseline * 3 - 1px);
-    background-color: $color-border-light;
-  }
-}
-
-.c-timeline__item {
-  display: flex;
-  gap: $space-m;
-  align-items: start;
-  position: relative;
-}
-
-.c-timeline__icon {
-  width: calc($baseline * 6);
-  aspect-ratio: 1/1;
-  border-radius: 100%;
-  background-color: $oc-gray-1;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $color-text-light;
-  border: 2px solid white;
-
-  svg {
-    fill: currentColor;
-  }
-}
-
-.c-timeline__icon--advanced {
-  background-color: $color-primary-lightest;
-  color: $color-primary-dark;
-}
-
-.c-timeline__icon--complete {
-  background-color: $color-succes-lightest;
-  color: $color-succes-darkest;
-}
-
-.c-timeline__action {
-  margin-bottom: 0;
-}
 
 /*
   Components: mobile nav
@@ -908,21 +802,9 @@ a:active {
   z-index: 100;
   overflow-y: auto;
   padding-right: $space-m;
-
-  // @include mq(bp1) {
-  //   display: none;
-  // }
 }
 
 .c-mobile-nav__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: 0;
-  transition: all 0.2s ease;
 }
 
 .c-mobile-nav__body {
@@ -931,9 +813,7 @@ a:active {
   color: white;
   padding: $space-m;
   height: 100%;
-  // opacity: 0;
-  translate: -100% 0;
-  transition: all 0.2s ease;
+  display: none;
 }
 
 /*
@@ -943,20 +823,6 @@ a:active {
 */
 
 .has-mobile-nav {
-  overflow: hidden;
-
-  .c-mobile-nav {
-    pointer-events: auto;
-  }
-
-  .c-mobile-nav__overlay {
-    opacity: 0.25;
-  }
-
-  .c-mobile-nav__body {
-    // opacity: 1;
-    translate: 0 0;
-  }
 }
 
 /*---------------------------------------/*
