@@ -95,13 +95,13 @@ strong {
 }
 
 h1 {
-  font-size: 1.6018066406rem;
+  font-size: 1.5714285714rem;
   line-height: 2.2857142857rem;
   margin-bottom: 1.7142857143rem;
 }
 
 h2 {
-  font-size: 1.265625rem;
+  font-size: 1.2857142857rem;
   line-height: 1.7142857143rem;
   margin-bottom: 1.7142857143rem;
 }
@@ -142,13 +142,13 @@ li ol {
 
 blockquote {
   font-style: italic;
-  font-size: 1.423828125rem;
+  font-size: 1.4285714286rem;
   line-height: 2.2857142857rem;
   margin-bottom: 1.7142857143rem;
 }
 
 figcaption {
-  font-size: 0.8888888889rem;
+  font-size: 0.8571428571rem;
   line-height: 1.1428571429rem;
   margin-top: 0.8571428571rem;
   color: #868e96;
@@ -762,7 +762,7 @@ a:active {
   Font size utility classes
 */
 .u-ms-1 {
-  font-size: 0.8888888889rem;
+  font-size: 0.8571428571rem;
   line-height: 1.7142857143rem;
 }
 

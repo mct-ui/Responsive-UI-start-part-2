@@ -75,20 +75,12 @@ $root-font-size: 14;
 $ratio: 1.125;
 
 // font-sizes
-$ms0: 1rem; // 14px
-$ms-1: calc($ms0 / $ratio); // 12px
-$ms-2: calc($ms-1 / $ratio); // 11px
-$ms1: calc($ms0 * $ratio); // 16px
-$ms2: calc($ms1 * $ratio); // 18px
-$ms3: calc($ms2 * $ratio); // 20px
-$ms4: calc($ms3 * $ratio); // 22px
-$ms5: calc($ms4 * $ratio); // 25px
-$ms6: calc($ms5 * $ratio); // 28px
-$ms7: calc($ms6 * $ratio); // 32px
-$ms8: calc($ms7 * $ratio); // 36px
-$ms9: calc($ms8 * $ratio); // 40px
-$ms10: calc($ms9 * $ratio); // 45px
-$ms11: calc($ms10 * $ratio); // 51px
+$ms-1: calc(12 / $root-font-size * 1rem);
+$ms0: 1rem;
+$ms1: calc(16 / $root-font-size * 1rem);
+$ms2: calc(18 / $root-font-size * 1rem);
+$ms3: calc(20 / $root-font-size * 1rem);
+$ms4: calc(22 / $root-font-size * 1rem);
 
 $font-family-primary: "Inter Web", Helvetica, arial, sans-serif;
 
